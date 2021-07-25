@@ -17,7 +17,7 @@ cd WAD_AndroidAssignment
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/<your_user_name>/.git 
+git remote add upstream https://github.com/wahfei/.git 
 ```
 
 **5.** Check the remotes for this repository.
