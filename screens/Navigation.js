@@ -17,7 +17,7 @@ const navigator = createStackNavigator(
         headerShown: false,
       }
     },
-    RegisterScreen: {
+    Registration: {
         screen: RegisterScreen,
         navigationOptions: {
         headerShown: true,
