@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, Button, View, TouchableHighlight, Image, TextInput, ImageBackground} from 'react-native';
+import { StyleSheet, Text, Button, View, TouchableHighlight, TouchableWithoutFeedback, Keyboard, Image, TextInput, ImageBackground} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 const WelcomeScreen = ({navigation}) => {
@@ -10,18 +10,19 @@ const WelcomeScreen = ({navigation}) => {
   }
 
   const registerHandler = () => {
-    navigation.navigate("RegisterScreen")
+    navigation.navigate("Registration")
   }
 
   return (
 
+    <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss();}}>
     <View style={styles.container}>
         <ImageBackground resizeMode="contain" source={require("../assets/welcomeBackground.jpg")} 
         style={styles.background} >
         
         <View style={styles.transparentContainer}>
             <Text style={styles.labels}>Username</Text>
-            <TextInput style={styles.inputField}/>
+            <TextInput style={styles.inputField} />
             <Text style={styles.labels}>Password</Text>
             <TextInput secureTextEntry={true} style={styles.inputField}/>
         </View>
@@ -29,7 +30,7 @@ const WelcomeScreen = ({navigation}) => {
         <View style={styles.touchableContainer}>
             <TouchableHighlight onPress={() => loginHandler()}>
             <View style={styles.loginButton}>
-                <Text style={styles.loginText} > LOGIN </Text>
+                <Text style={styles.loginText} >LOGIN</Text>
             </View>
             </TouchableHighlight>
             <TouchableHighlight onPress={() => registerHandler()}>
@@ -41,6 +42,7 @@ const WelcomeScreen = ({navigation}) => {
         
         </ImageBackground>
     </View>
+    </TouchableWithoutFeedback>
   );
 }
 
@@ -107,6 +109,8 @@ const styles = StyleSheet.create({
     height: 30,
     marginTop: 10,
     textAlign: "center",
+    fontSize: 16,
+    opacity: 1,
   },
 });
 
