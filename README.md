@@ -11,7 +11,7 @@ git clone https://github.com/wahfei/WAD_AndroidAssignment.git
 **3.** Navigate to the project directory :file_folder: .
 
 ```
-cd awesome-javascript-projects
+cd WAD_AndroidAssignment
 ```
 
 **4.** Add a reference(remote) to the original repository.
