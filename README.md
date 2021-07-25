@@ -1,5 +1,7 @@
 # WAD_Assignment
 
+#Before running "expo start", please tun "npm install" to download node-modules
+
 **1.**  Fork [this](https://github.com/wahfei/WAD_AndroidAssignment.git) repository.
 
 **2.**  Clone your forked copy of the project.
