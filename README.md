@@ -5,7 +5,7 @@
 **2.**  Clone your forked copy of the project.
 
 ```
-git clone https://github.com/wahfei/WAD_AndroidAssignment.git
+git clone https://github.com/<your_user_name>/WAD_AndroidAssignment.git
 ```
 
 **3.** Navigate to the project directory :file_folder: .
