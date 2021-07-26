@@ -11,7 +11,7 @@ import UserPageScreen from "./UserPageScreen";
 
 const navigator = createStackNavigator(
   {
-    shows the most top as default screen
+    //shows the most top as default screen
     WelcomeScreen: {
       screen: WelcomeScreen,
       navigationOptions: {
