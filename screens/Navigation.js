@@ -7,22 +7,29 @@ import { createAppContainer } from "react-navigation";
 
 import WelcomeScreen from "./WelcomeScreen";
 import RegisterScreen from "./RegisterScreen";
+import UserPageScreen from "./UserPageScreen";
 
 const navigator = createStackNavigator(
   {
     //shows the most top as default screen
-    WelcomeScreen: {
-      screen: WelcomeScreen,
+    // WelcomeScreen: {
+    //   screen: WelcomeScreen,
+    //   navigationOptions: {
+    //     headerShown: false,
+    //   }
+    // },
+    // Registration: {
+    //     screen: RegisterScreen,
+    //     navigationOptions: {
+    //     headerShown: true,
+    //   }
+    // },
+    UserPage: {
+      screen: UserPageScreen,
       navigationOptions: {
-        headerShown: false,
-      }
-    },
-    Registration: {
-        screen: RegisterScreen,
-        navigationOptions: {
-        headerShown: true,
-      }
-    },
+      headerShown: true,
+    }
+  },
   },
 );
 
