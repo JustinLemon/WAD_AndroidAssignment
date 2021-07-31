@@ -8,7 +8,6 @@ import { createAppContainer } from "react-navigation";
 import WelcomeScreen from "./WelcomeScreen";
 import RegisterScreen from "./RegisterScreen";
 import UserPageScreen from "./UserPageScreen";
-import SellItemScreen from './SellItem';
 
 const navigator = createStackNavigator(
   {
@@ -27,12 +26,6 @@ const navigator = createStackNavigator(
     },
     UserPage: {
       screen: UserPageScreen,
-      navigationOptions: {
-      headerShown: true,
-    }
-    ,
-    SellItem: {
-      screen: SellItemScreen,
       navigationOptions: {
       headerShown: true,
     }
