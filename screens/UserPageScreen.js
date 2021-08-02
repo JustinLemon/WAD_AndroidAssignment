@@ -36,7 +36,7 @@ const UserPage = (props) =>{
             
             
         </View>
-
+        <View style={styles.theList}>
         <FlatList 
             numColumns={2}
             keyExtractor={(item) => item.id}
@@ -47,11 +47,13 @@ const UserPage = (props) =>{
                     style={styles.image}
                     source={item.src}
                 />
-                <Text>{item.name}</Text>
+                <Text style={styles.itemDesc}>{item.name}</Text>
                 <Text>RM {item.price}</Text>
             </TouchableOpacity>
             )}
-      />     
+        /> 
+        </View>
+            
 
     </View>
     );
@@ -63,27 +65,25 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        //backgroundColor: 'coral',
+        alignItems: 'center',  
+        backgroundColor: '#65799b',
     },
     header: {
         flex: 1,
         flexDirection: 'row',
-        paddingHorizontal: 20,
-        paddingBottom: 40,
+        //paddingHorizontal: 20,
+        //paddingBottom: 40,
         paddingTop: 40,
         alignItems: 'center',
-        backgroundColor: 'skyblue',
+        backgroundColor: '#65799b',
         
     },
     userDetail: {
         fontSize: 24,
         padding: 25,
         color: '#fff',
-        bottom: 15
     },
     userIcon: {
-        marginLeft: 40,
         width: 70,
         height: 70,
         borderRadius: 50,
@@ -93,4 +93,16 @@ const styles = StyleSheet.create({
         width: 180,
         height: 160,
     },
+    itemDesc: {
+        alignItems: 'center'
+    },
+    theList: {
+        flex: 8,
+        borderRadius: 40,
+        backgroundColor: '#b6d5e1',
+        overflow: 'hidden',
+        width: 375,
+        paddingBottom: 50
+        
+    }
 })
